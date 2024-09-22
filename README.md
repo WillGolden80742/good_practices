@@ -287,7 +287,6 @@ Neste artigo, apresentamos boas práticas de programação com exemplos claros p
     it 'calcula o total corretamente' do
         pedido = Pedido.new(produto, quantidade: 2)
         expect(pedido.total).to
-
- eq(200)
+    eq(200)
     end
     ```
