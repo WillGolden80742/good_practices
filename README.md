@@ -283,10 +283,9 @@ Neste artigo, apresentamos boas práticas de programação com exemplos claros p
     Escreva testes que sejam rápidos, independentes, repetíveis, auto-verificáveis e oportunos.  
     **Exemplo**:  
     ```ruby
-    # Um teste F.I.R.S.T.
-    it 'calcula o total corretamente' do
+      it 'calcula o total corretamente' do
+        produto = Produto.new(preco: 100)
         pedido = Pedido.new(produto, quantidade: 2)
-        expect(pedido.total).to
-    eq(200)
-    end
+        expect(pedido.total).to eq(200)
+      end
     ```
